@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow-x: visible; */
+  /* overflow-y: visible; */
+  padding: 0;
+
+}
+
+@media screen and (max-width: 800px) {
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    overflow-y: visible;
+    padding: 0;
+  
+  }
+  }
