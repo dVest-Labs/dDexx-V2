@@ -75,7 +75,7 @@ const SectionA = () => {
                  <Button color="primary" className={classes.btn} variant="contained">Start Trading Now</Button>
                  </Grid>
                 <Grid item  md={6} xs={12} >
-                 <Button color="primary" className={classes.btn} variant="outlined">Earn form Farming</Button>
+                 <Button color="primary" className={classes.btn} variant="outlined">Earn from Farming</Button>
                  </Grid>
              </Grid>
              </Container>
