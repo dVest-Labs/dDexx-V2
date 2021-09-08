@@ -70,8 +70,8 @@ const SectionF = () => {
              </Card>
              <Card className={classes.paper}  elevation={0}>
                  <Typography className={classes.subText} variant="h6">Analytics</Typography>
-                 <Typography className={classes.subText} variant="body1">dVex Coins</Typography>
-                 <Typography className={classes.subText} variant="body1">dVex Tokens</Typography>
+                 <Typography className={classes.subText} variant="body1">Coins</Typography>
+                 <Typography className={classes.subText} variant="body1">Tokens</Typography>
                  <Typography className={classes.subText} variant="body1">Wallet</Typography>
              </Card>
              <div className={classes.paper}  elevation={0}>
