@@ -9,11 +9,7 @@ body {
     overflow-y: auto;
     padding: "10px";
  
-<<<<<<< HEAD
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-=======
-    font-family: 'Comfortaa', 'Segoe UI', 'Roboto', 'Oxygen',
->>>>>>> 515012e1be7c85934767d19d76ad3e13e17da8ad
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -21,10 +17,6 @@ body {
   }
   
   code {
-<<<<<<< HEAD
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-=======
-    font-family: 'Comfortaa', 'Courier New',
->>>>>>> 515012e1be7c85934767d19d76ad3e13e17da8ad
       monospace;
   }

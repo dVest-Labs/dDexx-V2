@@ -13,6 +13,7 @@ import Fade from '@material-ui/core/Fade';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import ddexxImage from "./images/ddexxImage.png"
+import newlogo from "./images/newlogo.png"
 import { Container } from 'react-bootstrap';
 import PersistentDrawer from "./utils/PersistentDrawer.js"
 import SwapHorizIcon from '@material-ui/icons/SwapHoriz';
@@ -137,14 +138,14 @@ export default function NavBar() {
            closeDrawer={closeDrawer}
            isDrawerOpened={isDrawerOpened}
           />
-      <img src={ddexxImage} alt="ddex" className={classes.logo}/>
+      <img src={newlogo} alt="ddex" className={classes.logo}/>
        <Grid container direction="row" justifyContent="flex-end" alignItems="flex-end">
                 <Button color="primary"  className={classes.btnSmall}  variant="contained" >Connect Wallet</Button>
        </Grid>
           </>
          :(
          <>
-         <img src={ddexxImage} alt="ddex" className={classes.logo}/>
+         <img src={newlogo} alt="ddex" className={classes.logo}/>
      
 
      <Grid container direction="row" justify="flex-start" alignItems="flex-start">
