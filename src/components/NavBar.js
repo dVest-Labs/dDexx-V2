@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
-import "../styles.css";
-import {makeStyles} from '@material-ui/core/styles';
+import React, {useState} from 'react'
+import "../styles.css"
+import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import {Grid, Typography, useMediaQuery, useTheme} from '@material-ui/core';
@@ -21,7 +21,7 @@ import ShowChartIcon from '@material-ui/icons/ShowChart';
 import InsertChartIcon from '@material-ui/icons/InsertChart';
 import LocalOfferIcon from '@material-ui/icons/LocalOffer';
 import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
-import {useHistory} from "react-router-dom";
+import { useHistory, Link } from "react-router-dom"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -59,6 +59,31 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(2),
     [theme.breakpoints.down('sm')]: {
       width: "8rem",
+    expandIcon:{
+      marginTop: "20rem",
+      flexGrow: 1,
+    },
+    appBar:{
+     backgroundColor: "black",
+     width: "100%",
+     color: "white"
+    },
+    logo:{
+      width: "10rem",
+      flexGrow: 1,
+      marginLeft: theme.spacing(2),
+      [theme.breakpoints.down('sm')]: {
+        width: "8rem",
+           }
+    },
+    container:{
+      width: "100%"
+    },
+    menuPaper:{
+      padding: theme.spacing(3)
+    },
+    menuTabIcon:{
+      marginRight: theme.spacing(2)
     }
   },
   container: {
@@ -79,10 +104,10 @@ export default function NavBar() {
   console.log(isMatch);
   const history = useHistory();
 
-  //Menu Icon
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [openDefi, setOpenDefi] = React.useState(null);
-  const [openToken, setOpenToken] = React.useState(null);
+   //Menu Icon
+   const [anchorEl, setAnchorEl] = React.useState(null);
+   const [openDefi, setOpenDefi] = React.useState(null);
+   const [openToken, setOpenToken] = React.useState(null);
   //  const open = Boolean(anchorEl);
   const [isDrawerOpened, setIsDrawerOpened] = useState(false);
   //  const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -96,15 +121,15 @@ export default function NavBar() {
   };
 
 
-  // Handle Click functions
-  const handleClick = (event) => {
+ // Handle Click functions
+   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
-  const handleClickDefi = (event) => {
+  const handleClickDefi= (event) => {
     setOpenDefi(event.currentTarget);
   };
-
-  const handleClickToken = (event) => {
+ 
+  const handleClickToken= (event) => {
     setOpenToken(event.currentTarget);
   };
 
@@ -116,7 +141,7 @@ export default function NavBar() {
   const handleCloseDefi = () => {
     setOpenDefi(null);
   };
-  const handleCloseToken = () => {
+  const handleCloseToken= () => {
     setOpenToken(null);
   };
 

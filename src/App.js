@@ -7,8 +7,8 @@ import {createTheme, ThemeProvider} from '@material-ui/core/styles';
 import cyan from '@material-ui/core/colors/cyan';
 import blue from '@material-ui/core/colors/blue';
 import DdexHome from "./components/DdexHome";
-import Swap from "./components/Swap";
-import Pools from "./components/Pools";
+import Swap from "./components/Swap"
+import Pools from "./components/Pools"
 
 function App() {
 
@@ -33,18 +33,18 @@ function App() {
   return (
 
     <BrowserRouter>
-      <ThemeProvider theme={theme}>
-        <NavBar/>
-        <Switch>
-          <Route exact path='/' component={Home}/>
-          <Route exact path='/DdexHome' component={DdexHome}/>
-          <Route exact path="/Swap" component={Swap}/>
-          <Route exact path="/pools" component={Pools}/>
-          <Redirect to="/"/>
-        </Switch>
-      </ThemeProvider>
-    </BrowserRouter>
-
+    <ThemeProvider theme={theme}>
+    <NavBar/>
+     <Switch>
+             <Route exact path='/' component={Home} />
+             <Route exact path='/DdexHome' component={DdexHome} />
+             <Route exact path="/Swap"  component={Swap}/>
+             <Route exact path="/pools"  component={Pools}/>
+             <Redirect to="/"/> 
+     </Switch>
+     </ThemeProvider>
+   </BrowserRouter>
+  
   );
 }
 
