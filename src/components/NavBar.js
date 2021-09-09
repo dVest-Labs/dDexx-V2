@@ -94,8 +94,8 @@ const useStyles = makeStyles((theme) => ({
   },
   menuTabIcon: {
     marginRight: theme.spacing(2)
-  }
-}));
+  },
+}}));
 
 
 export default function NavBar() {
