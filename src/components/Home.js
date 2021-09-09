@@ -5,10 +5,10 @@ import SectionF from './HomeLandingPage/SectionF'
 
 export default function Home() {
     return (
-        <div>
-            <SectionA/>
-            <SectionB/>
-            <SectionF/>
-        </div>
+        <>
+          <SectionA/>
+          <SectionB/>
+          <SectionF/>
+        </>
     )
 }
